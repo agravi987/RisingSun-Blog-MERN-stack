@@ -1,0 +1,76 @@
+/* Global Styles */
+body {
+  background: linear-gradient(to top, #ffd700, #ff4500); /* Rising Sun Effect */
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Section Title */
+.section-title {
+  font-weight: 700;
+  color: #4b0082; /* Violet */
+  margin-bottom: 20px;
+}
+
+/* Blog Card */
+.blog-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Body */
+.blog-card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Blog Title */
+.blog-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #4b0082;
+  transition: color 0.3s ease-in-out;
+}
+
+.blog-card:hover .blog-title {
+  color: #ff4500; /* Sun Orange */
+}
+
+/* Blog Excerpt */
+.blog-excerpt {
+  color: #555;
+  height: 60px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* Blog Meta */
+.blog-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Read More Button */
+.read-more-btn {
+  background: #4b0082; /* Violet */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease-in-out;
+}
+
+.read-more-btn:hover {
+  background: #ff4500; /* Sun Orange */
+}

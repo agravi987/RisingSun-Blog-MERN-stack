@@ -1,0 +1,145 @@
+/* Centering the signup form */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9800, #9c27b0);
+  font-family: "Roboto", sans-serif;
+}
+
+/* Signup Box Styling */
+.signup-box {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  text-align: center;
+}
+
+/* RisingSun Logo Styling */
+.RisingSun-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff9800;
+  text-shadow: 2px 2px 4px rgba(255, 87, 34, 0.7);
+  font-family: "Pacifico", cursive;
+  margin-bottom: 15px;
+}
+
+/* Form Styling */
+.signup-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Fieldset Styling */
+.signup-box fieldset {
+  border: none;
+  padding: 0;
+}
+
+/* Legend Styling */
+.signup-box legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6a1b9a;
+  margin-bottom: 10px;
+}
+
+/* Input Fields */
+.signup-box .form-group {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.signup-box .form-group label {
+  font-weight: bold;
+  color: #333;
+}
+
+.signup-box input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #9c27b0;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.signup-box input:focus {
+  border-color: #ff9800;
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(255, 152, 0, 0.5);
+}
+
+/* Signup Button */
+.signup-box button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: #6a1b9a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.signup-box button:hover {
+  background: #4a148c;
+  transform: scale(1.05);
+}
+
+/* Success & Error Messages */
+.success-message {
+  color: rgb(0, 126, 36);
+  font-size: 1rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+}
+
+/* Login Link */
+.login-link {
+  margin-top: 15px;
+}
+
+.login-link a {
+  color: #ff9800;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+  color: #ff6f00;
+  text-decoration: underline;
+}
+
+/* Password Strength Indicators */
+.password-requirements {
+  font-size: 12px;
+  line-height: 1.2;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.password-requirements p {
+  margin: 0;
+  color: red;
+}
+
+.password-requirements .valid {
+  color: green;
+}

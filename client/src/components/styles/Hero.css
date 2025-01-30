@@ -1,0 +1,70 @@
+.hero-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  color: white;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: white;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hero-title.fade-out {
+  opacity: 0;
+}
+
+.hero-title.fade-in {
+  opacity: 1;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.hero-actions {
+  margin-top: 2rem;
+}
+
+.hero-btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  opacity: 0.8;
+}
+
+.hero-footer {
+  margin-top: 30px;
+}
+
+.animated-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #fff;
+  animation: text-animation 5s infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

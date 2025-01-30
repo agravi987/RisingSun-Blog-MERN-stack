@@ -1,0 +1,75 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9800, #9c27b0);
+  color: white;
+  text-align: center;
+}
+
+.welcome-message {
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.5s;
+  padding: 20px;
+}
+
+.RisingSun-logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffeb3b;
+  text-shadow: 3px 3px 5px rgba(255, 87, 34, 0.8);
+  font-family: "Pacifico", cursive;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.dynamic-subtitle {
+  font-size: 1.3rem;
+  color: #ffeb3b;
+  margin-bottom: 20px;
+  transition: opacity 0.5s ease;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.login-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: #6a1b9a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background: #4a148c;
+  transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
